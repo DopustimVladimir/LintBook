@@ -15,7 +15,7 @@ There are many different linters, and the purpose of this guide is to provide a 
 * [CoffeeLint](docs/coffeelint\_en.md) — for CoffeeScript
 * [ESLint](docs/eslint\_en.md) — for JavaScript
 * [PyLint](docs/pylint\_en.md) — for Python
-* [StyleLint](docs/stylelint.md) — for CSS, Sass, Less, ...
+* [StyleLint](docs/stylelint\_en.md) — for CSS, Sass, Less, ...
 
 ## Примеры конфигурации
 

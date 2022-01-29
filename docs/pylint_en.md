@@ -1,21 +1,22 @@
+---
+description: A tool for static analysis of Python code
+---
 
-# PyLint
+# PyLint (en)
 
-A tool for static analysis of Python code
-
-- Understands modern syntax;
-- The rules are configured in the configuration file;
-- Expanded by plugins.
+* Understands modern syntax;
+* The rules are configured in the configuration file;
+* Expanded by plugins.
 
 ## Installation
 
-```sh
+```bash
 pip install pylint
 ```
 
 ## Usage examples
 
-```sh
+```bash
 pylint --version # show the version
 pylint --help # show help about commands
 pylint "lib/*.py" # check all Python files in the lib/ directory
@@ -26,19 +27,19 @@ echo "a=2" | pylint --from-stdin demo # check STDIN
 
 ## Settings
 
-By default, PyLint will search for the configuration file *.pylintrc* in the current directory.
+By default, PyLint will search for the configuration file _.pylintrc_ in the current directory.
 
-```sh
+```bash
 pylint --generate-rcfile > ".pylintrc" # generate a configuration file
 ```
 
 Classification of errors:
 
-- `С` — violation of programming standards (Convention)
-- `R` — refactoring required (Refactor)
-- `W` — warning (Warning)
-- `E` — error (Error)
-- `F` — error during Pylint execution (Fatal)
+* `С` — violation of programming standards (Convention)
+* `R` — refactoring required (Refactor)
+* `W` — warning (Warning)
+* `E` — error (Error)
+* `F` — error during Pylint execution (Fatal)
 
 Example of a configuration file:
 
@@ -65,7 +66,7 @@ max-module-lines=500
 
 You can cancel the validation of the rules (all or specified) for a specific block of code:
 
-```py
+```python
 # pylint: disable=all
 def action(unused):
     pass
@@ -79,7 +80,7 @@ def action(unused):
 
 You can cancel the validation of the rules (all or specified) for a specific line:
 
-```py
+```python
 def action(unused): # pylint: disable=all
     pass # pylint: disable=all
 
@@ -93,23 +94,23 @@ Depending on the results, the tool outputs a completion code:
 
 | code | description                     |
 | ---- | ------------------------------- |
-|    0 | no errors                       |
-|    1 | detected "Fatal" violation      |
-|    2 | detected "Error" violation      |
-|    4 | detected "Warning" violation    |
-|    8 | detected "Refactor" violation   |
-|   16 | detected "Convention" violation |
-|   32 | internal error during execution |
+| 0    | no errors                       |
+| 1    | detected "Fatal" violation      |
+| 2    | detected "Error" violation      |
+| 4    | detected "Warning" violation    |
+| 8    | detected "Refactor" violation   |
+| 16   | detected "Convention" violation |
+| 32   | internal error during execution |
 
 ## Useful links
 
 Settings:
 
-- [pylint.readthedocs.io](https://pylint.readthedocs.io/en/latest/technical_reference/features.html) — all rules with a brief description
-- [@dopustim/pylint-config](https://github.com/dopustim/pylint-config) — sample configuration
+* [pylint.readthedocs.io](https://pylint.readthedocs.io/en/latest/technical\_reference/features.html) — all rules with a brief description
+* [@dopustim/pylint-config](https://github.com/dopustim/pylint-config) — sample configuration
 
 IDE Plugins:
 
-- [SublimeLinter-pylint](https://packagecontrol.io/packages/SublimeLinter-pylint) — Sublime Text plugin
-- [linter-pylint](https://atom.io/packages/linter-pylint) — Atom plugin
-- [@id:fnando.linter](https://marketplace.visualstudio.com/items?itemName=fnando.linter) — Visual Studio Code plugin
+* [SublimeLinter-pylint](https://packagecontrol.io/packages/SublimeLinter-pylint) — Sublime Text plugin
+* [linter-pylint](https://atom.io/packages/linter-pylint) — Atom plugin
+* [@id:fnando.linter](https://marketplace.visualstudio.com/items?itemName=fnando.linter) — Visual Studio Code plugin

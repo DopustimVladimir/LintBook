@@ -1,22 +1,23 @@
+---
+description: Инструмент для статического анализа кода на CoffeeScript
+---
 
-# CoffeeLint
+# CoffeeLint (ru)
 
-Инструмент для статического анализа кода на CoffeeScript
-
-- Понимает современный синтаксис;
-- Правила подключаются опционально в конфигурационном файле;
-- Расширяется плагинами.
+* Понимает современный синтаксис;
+* Правила подключаются опционально в конфигурационном файле;
+* Расширяется плагинами.
 
 ## Установка
 
-```sh
+```bash
 npm install -g @coffeelint/cli # глобально
 npm install -D @coffeelint/cli # как зависимость для текущего проекта
 ```
 
 ## Примеры использования
 
-```sh
+```bash
 coffeelint --version # показать версию
 coffeelint --help # показать помощь по командам
 coffeelint "lib/*.coffee" # проверить все CoffeeScript-файлы в каталоге lib/
@@ -27,17 +28,17 @@ echo "a=2" | npx coffeelint -s # проверить STDIN
 
 ## Настройки
 
-По умолчанию CoffeeLint будет искать конфигурационный файл *.coffeelintrc.json* в текущем каталоге.
+По умолчанию CoffeeLint будет искать конфигурационный файл _.coffeelintrc.json_ в текущем каталоге.
 
-```sh
+```bash
 coffeelint --makeconfig > ".coffeelintrc.json" # генерация файла конфигурации
 ```
 
 Поведение:
 
-- `ignore` — отменить правило
-- `warn` — применить правило с предупреждением
-- `error` — применить правило с ошибкой
+* `ignore` — отменить правило
+* `warn` — применить правило с предупреждением
+* `error` — применить правило с ошибкой
 
 Пример конфигурационного файла:
 
@@ -48,7 +49,7 @@ coffeelint --makeconfig > ".coffeelintrc.json" # генерация файла �
 }
 ```
 
-Как вариант, настройки можно указать в *package.json*:
+Как вариант, настройки можно указать в _package.json_:
 
 ```json
 {
@@ -66,11 +67,11 @@ coffeelint --makeconfig > ".coffeelintrc.json" # генерация файла �
 
 ## Отмена и включение правил
 
-Чтобы игнорировать какие-либо файлы, можно указать их в файле *.coffeelintignore* (синтаксис *.gitignore*).
+Чтобы игнорировать какие-либо файлы, можно указать их в файле _.coffeelintignore_ (синтаксис _.gitignore_).
 
 Можно отменить проверку правил (всех, или указанных) для конкретного блока кода:
 
-```coffee
+```coffeescript
 # coffeelint: disable
 alert "foo"
 # coffeelint: enable
@@ -82,7 +83,7 @@ alert "foo"
 
 Можно отменить проверку правил (всех, или указанных) для конкретной строки:
 
-```coffee
+```coffeescript
 alert "foo" # coffeelint: disable-line
 
 alert "foo" # coffeelint: disable-line=no_implicit_parens
@@ -94,25 +95,25 @@ alert "foo" # coffeelint: disable-line=no_implicit_parens
 
 | код | описание                              |
 | --- | ------------------------------------- |
-|   0 | ошибок нет                            |
-|   1 | как минимум одно правило не соблюдено |
-|   2 | ошибка в настройках                   |
+| 0   | ошибок нет                            |
+| 1   | как минимум одно правило не соблюдено |
+| 2   | ошибка в настройках                   |
 
 ## Полезные ссылки
 
 Настройки:
 
-- [coffeelint.org](http://www.coffeelint.org/#options) — все правила с кратким описанием
-- [@dopustim/coffeelint-config](https://github.com/dopustim/coffeelint-config) — образец конфигурации
+* [coffeelint.org](http://www.coffeelint.org/#options) — все правила с кратким описанием
+* [@dopustim/coffeelint-config](https://github.com/dopustim/coffeelint-config) — образец конфигурации
 
 Плагины для IDE:
 
-- [SublimeLinter-coffeelint](https://packagecontrol.io/packages/SublimeLinter-coffeelint) — плагин для Sublime Text
-- [linter-coffeelint](https://atom.io/packages/linter-coffeelint) — плагин для Atom
-- [@id:slb235.vscode-coffeelint](https://marketplace.visualstudio.com/items?itemName=slb235.vscode-coffeelint) — плагин для Visual Studio Code
+* [SublimeLinter-coffeelint](https://packagecontrol.io/packages/SublimeLinter-coffeelint) — плагин для Sublime Text
+* [linter-coffeelint](https://atom.io/packages/linter-coffeelint) — плагин для Atom
+* [@id:slb235.vscode-coffeelint](https://marketplace.visualstudio.com/items?itemName=slb235.vscode-coffeelint) — плагин для Visual Studio Code
 
 Плагины для таск-менеджеров:
 
-- [grunt-coffeelint](https://www.npmjs.com/package/grunt-coffeelint) — плагин для Grunt
-- [gulp-coffeelint](https://www.npmjs.com/package/gulp-coffeelint) — плагин для Gulp
-- [coffeelint-loader](https://www.npmjs.com/package/coffeelint-loader) — плагин для Webpack
+* [grunt-coffeelint](https://www.npmjs.com/package/grunt-coffeelint) — плагин для Grunt
+* [gulp-coffeelint](https://www.npmjs.com/package/gulp-coffeelint) — плагин для Gulp
+* [coffeelint-loader](https://www.npmjs.com/package/coffeelint-loader) — плагин для Webpack

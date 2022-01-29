@@ -1,22 +1,23 @@
+---
+description: A tool for static analysis of CSS, Sass, Less and other CSS-like code
+---
 
-# StyleLint
+# StyleLint (en)
 
-A tool for static analysis of CSS, Sass, Less and other CSS-like code
-
-- Understands modern syntax;
-- Rules are connected optionally in the configuration file;
-- Expanded by plugins.
+* Understands modern syntax;
+* Rules are connected optionally in the configuration file;
+* Expanded by plugins.
 
 ## Installation
 
-```sh
+```bash
 npm install -g stylelint # globally
 npm install -D stylelint # as a dependency for the current project
 ```
 
 ## Usage examples
 
-```sh
+```bash
 stylelint --version # show the version
 stylelint --help # show help about commands
 stylelint "lib/*.css" # check all CSS files in the lib/ directory
@@ -28,12 +29,12 @@ echo "a { color: pink; }" | stylelint # check STDIN
 
 ## Settings
 
-By default, StyleLint will search for the configuration file *.stylelintrc.json* in the current directory.
+By default, StyleLint will search for the configuration file _.stylelintrc.json_ in the current directory.
 
 Behaviour:
 
-- `warning` — apply a rule with a warning
-- `error` — apply a rule with an error
+* `warning` — apply a rule with a warning
+* `error` — apply a rule with an error
 
 Example of a configuration file:
 
@@ -46,7 +47,7 @@ Example of a configuration file:
 }
 ```
 
-Alternatively, the settings can be specified in *package.json*:
+Alternatively, the settings can be specified in _package.json_:
 
 ```json
 {
@@ -83,7 +84,7 @@ You can connect plugins and use other rules:
 
 ## Cancellation and inclusion of rules
 
-To ignore any files, you can specify them in the *.stylelintignore* file (syntax *.gitignore*), or in *package.json*:
+To ignore any files, you can specify them in the _.stylelintignore_ file (syntax _.gitignore_), or in _package.json_:
 
 ```json
 {
@@ -127,27 +128,27 @@ Depending on the results, the tool outputs a completion code:
 
 | code | description                       |
 | ---- | --------------------------------- |
-|    0 | no errors                         |
-|    1 | something went wrong              |
-|    2 | at least one rule is not followed |
-|   78 | error in settings                 |
-|   80 | there were no files to check      |
+| 0    | no errors                         |
+| 1    | something went wrong              |
+| 2    | at least one rule is not followed |
+| 78   | error in settings                 |
+| 80   | there were no files to check      |
 
 ## Useful links
 
 Settings:
 
-- [stylelint.io](https://stylelint.io/user-guide/rules/) — all rules with a brief description
-- [@dopustim/stylelint-config](https://github.com/dopustim/stylelint-config) — sample configuration
+* [stylelint.io](https://stylelint.io/user-guide/rules/) — all rules with a brief description
+* [@dopustim/stylelint-config](https://github.com/dopustim/stylelint-config) — sample configuration
 
 IDE Plugins:
 
-- [SublimeLinter-stylelint](https://packagecontrol.io/packages/SublimeLinter-stylelint) — Sublime Text plugin
-- [linter-stylelint](https://atom.io/packages/linter-stylelint) — Atom plugin
-- [@id:shinnn.stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) — Visual Studio Code plugin
+* [SublimeLinter-stylelint](https://packagecontrol.io/packages/SublimeLinter-stylelint) — Sublime Text plugin
+* [linter-stylelint](https://atom.io/packages/linter-stylelint) — Atom plugin
+* [@id:shinnn.stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) — Visual Studio Code plugin
 
 Task Manager Plugins:
 
-- [grunt-stylelint](https://www.npmjs.com/package/grunt-stylelint) — Grunt plugin
-- [gulp-stylelint](https://www.npmjs.com/package/gulp-stylelint) — Gulp plugin
-- [stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin) — Webpack plugin
+* [grunt-stylelint](https://www.npmjs.com/package/grunt-stylelint) — Grunt plugin
+* [gulp-stylelint](https://www.npmjs.com/package/gulp-stylelint) — Gulp plugin
+* [stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin) — Webpack plugin

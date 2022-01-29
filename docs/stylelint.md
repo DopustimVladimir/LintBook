@@ -1,22 +1,25 @@
+---
+description: >-
+  Инструмент для статического анализа кода на CSS, Sass, Less и других
+  синтаксисов типа CSS
+---
 
-# StyleLint
+# StyleLint (ru)
 
-Инструмент для статического анализа кода на CSS, Sass, Less и других синтаксисов типа CSS
-
-- Понимает современный синтаксис;
-- Правила подключаются опционально в конфигурационном файле;
-- Расширяется плагинами.
+* Понимает современный синтаксис;
+* Правила подключаются опционально в конфигурационном файле;
+* Расширяется плагинами.
 
 ## Установка
 
-```sh
+```bash
 npm install -g stylelint # глобально
 npm install -D stylelint # как зависимость для текущего проекта
 ```
 
 ## Примеры использования
 
-```sh
+```bash
 stylelint --version # показать версию
 stylelint --help # показать помощь по командам
 stylelint "lib/*.css" # проверить все CSS-файлы в каталоге lib/
@@ -28,12 +31,12 @@ echo "a { color: pink; }" | stylelint # проверить STDIN
 
 ## Настройки
 
-По умолчанию StyleLint будет искать конфигурационный файл *.stylelintrc.json* в текущем каталоге.
+По умолчанию StyleLint будет искать конфигурационный файл _.stylelintrc.json_ в текущем каталоге.
 
 Поведение:
 
-- `warning` — применить правило с предупреждением
-- `error` — применить правило с ошибкой
+* `warning` — применить правило с предупреждением
+* `error` — применить правило с ошибкой
 
 Пример конфигурационного файла:
 
@@ -46,7 +49,7 @@ echo "a { color: pink; }" | stylelint # проверить STDIN
 }
 ```
 
-Как вариант, настройки можно указать в *package.json*:
+Как вариант, настройки можно указать в _package.json_:
 
 ```json
 {
@@ -83,7 +86,7 @@ echo "a { color: pink; }" | stylelint # проверить STDIN
 
 ## Отмена и включение правил
 
-Чтобы игнорировать какие-либо файлы, можно указать их в *.stylelintignore* (синтаксис *.gitignore*), или в *package.json*:
+Чтобы игнорировать какие-либо файлы, можно указать их в _.stylelintignore_ (синтаксис _.gitignore_), или в _package.json_:
 
 ```json
 {
@@ -127,9 +130,9 @@ echo "a { color: pink; }" | stylelint # проверить STDIN
 
 | код | описание                              |
 | --- | ------------------------------------- |
-|  0  | ошибок нет                            |
-|  1  | что-то пошло не так                   |
-|  2  | как минимум одно правило не соблюдено |
+| 0   | ошибок нет                            |
+| 1   | что-то пошло не так                   |
+| 2   | как минимум одно правило не соблюдено |
 | 78  | ошибка в настройках                   |
 | 80  | не нашлись файлы для проверки         |
 
@@ -137,17 +140,17 @@ echo "a { color: pink; }" | stylelint # проверить STDIN
 
 Настройки:
 
-- [stylelint.io](https://stylelint.io/user-guide/rules/) — все правила с кратким описанием
-- [@dopustim/stylelint-config](https://github.com/dopustim/stylelint-config) — образец конфигурации
+* [stylelint.io](https://stylelint.io/user-guide/rules/) — все правила с кратким описанием
+* [@dopustim/stylelint-config](https://github.com/dopustim/stylelint-config) — образец конфигурации
 
 Плагины для IDE:
 
-- [SublimeLinter-stylelint](https://packagecontrol.io/packages/SublimeLinter-stylelint) — плагин для Sublime Text
-- [linter-stylelint](https://atom.io/packages/linter-stylelint) — плагин для Atom
-- [@id:shinnn.stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) — плагин для Visual Studio Code
+* [SublimeLinter-stylelint](https://packagecontrol.io/packages/SublimeLinter-stylelint) — плагин для Sublime Text
+* [linter-stylelint](https://atom.io/packages/linter-stylelint) — плагин для Atom
+* [@id:shinnn.stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) — плагин для Visual Studio Code
 
 Плагины для таск-менеджеров:
 
-- [grunt-stylelint](https://www.npmjs.com/package/grunt-stylelint) — плагин для Grunt
-- [gulp-stylelint](https://www.npmjs.com/package/gulp-stylelint) — плагин для Gulp
-- [stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin) — плагин для Webpack
+* [grunt-stylelint](https://www.npmjs.com/package/grunt-stylelint) — плагин для Grunt
+* [gulp-stylelint](https://www.npmjs.com/package/gulp-stylelint) — плагин для Gulp
+* [stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin) — плагин для Webpack

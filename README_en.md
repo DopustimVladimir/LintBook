@@ -11,10 +11,10 @@ One of the important points is the ability to configure the analyzer for the nee
 
 There are many different linters, and the purpose of this guide is to provide a brief overview of some of them and provide configuration examples.
 
-- [CoffeeLint](./docs/coffeelint.md)
-- [ESLint](./docs/eslint.md)
-- [PyLint](./docs/pylint.md)
-- [StyleLint](./docs/stylelint.md)
+- [CoffeeLint](./docs/coffeelint.md) — for CoffeeScript
+- [ESLint](./docs/eslint.md) — for JavaScript
+- [PyLint](./docs/pylint.md) — for Python
+- [StyleLint](./docs/stylelint.md) — for CSS, Sass, Less, ...
 
 ## Примеры конфигурации
 

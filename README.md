@@ -11,10 +11,10 @@
 
 Существует множество различных линтеров, а цель данного руководства — составить краткий обзор некоторых из них и представить примеры конфигурации.
 
-- [CoffeeLint](./docs/coffeelint.md)
-- [ESLint](./docs/eslint.md)
-- [PyLint](./docs/pylint.md)
-- [StyleLint](./docs/stylelint.md)
+- [CoffeeLint](./docs/coffeelint.md) — для CoffeeScript
+- [ESLint](./docs/eslint.md) — для JavaScript
+- [PyLint](./docs/pylint.md) — для Python
+- [StyleLint](./docs/stylelint.md) — для CSS, Sass, Less, ...
 
 ## Примеры конфигурации
 
